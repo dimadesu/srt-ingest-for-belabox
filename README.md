@@ -244,3 +244,5 @@ Here are some quotes of people from Discord to guide future improvements.
 > it should detect it and select some H265 decoder available in your gstreamer. if it's missing system level libraries or if decoder element is not properly programmed, it can't make selection correctly and may use software decoding which drops performance. I don't like to use it myself as I want more control
 
 > With SRT I find `decodebin` to cause super high latency. I prefer to use `tsdemux` and `h265parse`
+
+> you can see in other belabox pipelines that decoding elements of the pipeline are hand built to use hardware specific elements directly
