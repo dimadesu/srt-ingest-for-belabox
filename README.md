@@ -209,7 +209,7 @@ Restart Belabox to make new custom pipeline show up.
 
 ## Alternative implementations/pipelines
 
-### MediaMTX providing SRT ingest. Custom pipeline pulling SRT from MediaMTX into Belabox
+### MediaMTX provides SRT ingest. Custom pipeline pulls SRT from MediaMTX into Belabox
 
 I tried using `h265_rtmp_localhost_publish_live_30fps` as a base for a new pipeline.
 
@@ -223,7 +223,7 @@ Note: it needs that extra weird slash after the port number for some reason.
 
 I think this can do only H264, because RTMP ingest can only do H264. _To be confirmed._
 
-### MediaMTX providing SRT ingest. Custom pipeline pulling RTMP from MediaMTX into Belabox
+### MediaMTX provides SRT ingest. Custom pipeline pulls RTMP from MediaMTX into Belabox
 
 I tried using `h265_rtmp_localhost_publish_live_30fps` as a base again and changing first line to
 `srtsrc location=srt://127.0.0.1:8890?streamid=read:mystream !`
