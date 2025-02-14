@@ -1,6 +1,6 @@
 # Unofficial SRT Ingest for Belabox
 
-Originally, I started it as [Git Gist](https://gist.github.com/dimadesu/9329d1c1a364af2461f9af1dee0b30ce) and theb converted that into Git repo as it's probably easier to find it and suggest changes.
+Originally, I started it as [Git Gist](https://gist.github.com/dimadesu/9329d1c1a364af2461f9af1dee0b30ce) and later converted it into [Git repo](https://github.com/dimadesu/srt-ingest-for-belabox) as it should probably be easier to find it and suggest changes.
 
 ## Background
 
@@ -209,7 +209,7 @@ Restart Belabox to make new custom pipeline show up.
 
 ## Alternative implementations/pipelines
 
-### MediaMTX doing SRT-RTMP into RTMP ingest of Belabox
+### MediaMTX providing SRT ingest. Custom pipeline pulling SRT from MediaMTX into Belabox
 
 I tried using `h265_rtmp_localhost_publish_live_30fps` as a base for a new pipeline.
 
@@ -223,7 +223,7 @@ Note: it needs that extra weird slash after the port number for some reason.
 
 I think this can do only H264, because RTMP ingest can only do H264. _To be confirmed._
 
-### MediaMTX doing SRT-SRT into SRT ingest of Belabox
+### MediaMTX providing SRT ingest. Custom pipeline pulling RTMP from MediaMTX into Belabox
 
 I tried using `h265_rtmp_localhost_publish_live_30fps` as a base again and changing first line to
 `srtsrc location=srt://127.0.0.1:8890?streamid=read:mystream !`
