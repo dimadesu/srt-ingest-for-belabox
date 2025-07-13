@@ -1,3 +1,5 @@
+_Note: Belabox now has it's "official" SRT ingest. I suggest you use that unless you have some special reason to this unoffical one._
+
 # Unofficial SRT Ingest for Belabox
 
 Originally, I started it as [Git Gist](https://gist.github.com/dimadesu/9329d1c1a364af2461f9af1dee0b30ce) and later converted it into [Git repo](https://github.com/dimadesu/srt-ingest-for-belabox) as it should probably be easier to find it and suggest changes.
