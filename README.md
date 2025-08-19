@@ -1,4 +1,4 @@
-_Note: Belabox now has it's "official" SRT ingest. I suggest you use that unless you have some special reason to this unoffical one._
+_Note: Belabox now has it's "official" SRT ingest. I suggest you use that one unless you have some special reason to use this unoffical one._
 
 # Unofficial SRT Ingest for Belabox
 
